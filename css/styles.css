@@ -240,9 +240,8 @@ body {
     color: var(--main-text-cl);
 }
 
-.social-icons {
+.social-icon {
     display: inline-flex;
-    padding-bottom: 30px;
 }
 
 .social-icons-svg {
@@ -261,7 +260,8 @@ body {
     background-color: var(--title-cl);
 }
 
-.social-icons-link:hover {
+.social-icons-link:hover,
+.social-icons-link:focus {
     background-color: var(--accent-cl);
 }
 
@@ -285,6 +285,7 @@ body {
 }
 
 .team-item-position {
+    margin-bottom: 16px;
     font-family: var(--main-font);
     font-weight: normal;
     font-size: 16px;
@@ -293,10 +294,8 @@ body {
 }
 
 .team-position {
-    padding-top: 30px;
-    padding-bottom: 16px;
-    padding-left: 32px;
-    padding-right: 32px;
+    padding: 30px 32px;
+    text-align: center;
 }
 
 .border-team {
@@ -324,6 +323,17 @@ body {
 
 .customer-icons-item:not(:last-child) {
     margin-right: 30px;
+}
+
+.customer-icons-link:hover .customer-icons-svg,
+.customer-icons-link:focus .customer-icons-svg {
+    fill: var(--accent-cl);
+}
+
+.customer-icons-link:hover,
+.customer-icons-link:focus {
+    border: 1px solid var(--accent-cl);
+    border-radius: 4px;
 }
 
 .customer-icons-link {
@@ -376,9 +386,10 @@ body {
 
 .social-footer:hover,
 .social-footer:focus {
-background-color: #2196f3;
+background-color: var(--accent-cl);
 border-radius: 50%;
 }
+
 .mail-footer {
     margin-bottom: 8px;
 }
@@ -393,6 +404,11 @@ border-radius: 50%;
     display: inline;
     margin-left: 0px;
     margin-top: 8px;
+}
+
+.contacs-link-icon {
+    display: flex;
+    align-items: center;
 }
 
 .tel-icon {
@@ -427,9 +443,9 @@ border-radius: 50%;
     background-color: var(--accent-cl);
 }
 
-.social-footer:hover .footer-icons-svg,
-.social-footer:focus .social-icons-svg {
-    fill: #FFFFFF;
+.social-footer:hover .footer-icons,
+.social-footer:focus .social-icons {
+    fill: var(--title-cl);
 }
 
 .footer-social-icons {
@@ -441,7 +457,7 @@ border-radius: 50%;
     margin-right: 10px;
 }
 
-.footer-icons-svg {
+.footer-icons {
     width: 20px;
     height: 20px;
     fill: var(--title-cl);
@@ -553,10 +569,12 @@ border-radius: 50%;
     margin-left: -30px;
     margin-top: -30px;
   }
-
-.shadow:focus,
-.shadow:hover {
-    box-sizing: border-box;
+.shadow {
+    display: block;
+}
+.shadow:hover,
+.shadow:focus
+ {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   }
 
