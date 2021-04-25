@@ -258,7 +258,7 @@ body {
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    background-color: #FFFFFF;
+    background-color: var(--title-cl);
 }
 
 .social-icons-link:hover {
