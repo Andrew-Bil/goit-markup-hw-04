@@ -26,6 +26,10 @@ ul
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
     font-family: var(--main-font);
     font-size: 14px;
@@ -450,7 +454,6 @@ border-radius: 50%;
 
 .footer-social-icons {
     display: inline-flex;
-    padding-bottom: 30px;
 }
 
 .footer-icons-item:not(:last-child) {
